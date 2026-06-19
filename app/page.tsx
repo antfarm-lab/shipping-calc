@@ -10,6 +10,8 @@ const shippingData = [
 
 export default function Home() {
   const [size, setSize] = useState("60");
+  const [sellPrice, setSellPrice] = useState("");
+  const [buyPrice, setBuyPrice] = useState("");
 
   const result =
     shippingData.find((item) => item.size === size) || shippingData[0];
@@ -17,12 +19,19 @@ export default function Home() {
   const cheapest =
     result.mercari < result.yuupack ? "メルカリ便" : "ゆうパック";
 
+  const shippingCost =
+    cheapest === "メルカリ便" ? result.mercari : result.yuupack;
+
+  const profit =
+    Number(sellPrice || 0) - Number(buyPrice || 0) - shippingCost;
+
   return (
-    <main className="min-h-screen p-10 flex flex-col items-center justify-center gap-6">
-      <h1 className="text-3xl font-bold">フリマ送料計算ツール</h1>
+    <main className="min-h-screen p-10 flex flex-col items-center justify-center gap-5">
+
+      <h1 className="text-3xl font-bold">フリマ利益計算ツール</h1>
 
       <select
-        className="border p-2 text-lg"
+        className="border p-2"
         value={size}
         onChange={(e) => setSize(e.target.value)}
       >
@@ -33,14 +42,27 @@ export default function Home() {
         ))}
       </select>
 
-      <div className="text-xl">
-        <p>メルカリ便: {result.mercari}円</p>
-        <p>ゆうパック: {result.yuupack}円</p>
+      <input
+        className="border p-2"
+        placeholder="売値"
+        value={sellPrice}
+        onChange={(e) => setSellPrice(e.target.value)}
+      />
+
+      <input
+        className="border p-2"
+        placeholder="仕入れ値"
+        value={buyPrice}
+        onChange={(e) => setBuyPrice(e.target.value)}
+      />
+
+      <p>最安送料: {shippingCost}円</p>
+
+      <div className="border rounded-xl p-4 bg-green-50">
+        <p>予想利益</p>
+        <p className="text-2xl font-bold">{profit}円</p>
       </div>
 
-      <div className="text-2xl font-bold">
-        最安: {cheapest}
-      </div>
     </main>
   );
 }
