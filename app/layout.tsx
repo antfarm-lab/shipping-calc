@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "送料計算ツール｜メルカリ・ラクマ発送コストを簡単計算",
   description:
-    "メルカリ・ラクマ・フリマアプリの送料を簡単に計算できる無料ツール。発送方法ごとのコスト比較や利益確認に便利です。",
+    "メルカリやラクマなどフリマアプリの送料を簡単に確認できる無料ツール。発送方法ごとの送料比較にも便利です。",
+  verification: {
+    google: "miCxwdbgRhGe66W37cjiBB0MFNO1tB2WJxh9Dm_zTjc",
+  },
 };
 
 export default function RootLayout({
