@@ -62,6 +62,26 @@ export default function Home() {
         <p>予想利益</p>
         <p className="text-2xl font-bold">{profit}円</p>
       </div>
+      <section className="mt-10 bg-white rounded-xl p-6">
+  <h2 className="text-xl font-bold mb-4">
+    フリマ販売で送料計算が重要な理由
+  </h2>
+
+  <p className="mb-3">
+    メルカリやラクマで商品を販売すると、送料は利益に大きく影響します。
+    商品サイズによって送料が変わるため事前確認が重要です。
+  </p>
+
+  <p className="mb-3">
+    サイズ選択を間違えると想定より送料が高くなり、
+    利益が大きく減る可能性があります。
+  </p>
+
+  <p>
+    この送料計算ツールでは配送サイズごとの送料を比較し、
+    最も安い発送方法を確認できます。
+  </p>
+</section>
 <section className="mt-10 rounded-xl border bg-white p-5">
   <h2 className="mb-3 text-lg font-bold">ほかの便利ツール</h2>
   <div className="grid gap-2 text-sm">
