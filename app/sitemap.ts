@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://shipping-calc.vercel.app";
+ const baseUrl = "https://shipping-calc-olive.vercel.app";
 
   return [
     {
