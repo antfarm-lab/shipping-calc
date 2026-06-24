@@ -13,9 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "送料計算ツール｜メルカリ・ラクマ発送コストを簡単計算",
-  description:
-    "メルカリやラクマなどフリマアプリの送料を簡単に確認できる無料ツール。発送方法ごとの送料比較にも便利です。",
+  title: "メルカリ送料計算ツール【無料】送料を自動計算",
+description:
+  "メルカリやラクマで商品発送する時の送料を無料で自動計算。配送サイズや発送方法から送料を簡単確認できます。物販・副業・せどりに便利。",
+keywords: [
+  "メルカリ送料",
+  "送料計算",
+  "ラクマ送料",
+  "発送方法",
+  "せどり",
+  "副業",
+],
   verification: {
     google: "miCxwdbgRhGe66W37cjiBB0MFNO1tB2WJxh9Dm_zTjc",
   },
