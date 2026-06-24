@@ -26,7 +26,7 @@ export default function Home() {
     Number(sellPrice || 0) - Number(buyPrice || 0) - shippingCost;
 
   return (
-    <main className="min-h-screen p-10 flex flex-col items-center justify-center gap-5">
+   <main className="min-h-screen p-10 max-w-2xl mx-auto flex flex-col items-center justify-center gap-5">
 
       <h1 className="text-3xl font-bold">フリマ利益計算ツール</h1>
 
