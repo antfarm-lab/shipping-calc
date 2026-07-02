@@ -62,6 +62,56 @@ export default function Home() {
         <p>予想利益</p>
         <p className="text-2xl font-bold">{profit}円</p>
       </div>
+      <section className="mt-12 text-left max-w-3xl mx-auto space-y-6">
+
+  <div>
+    <h2 className="text-2xl font-bold mb-3">
+      60サイズの送料はいくらかかる？
+    </h2>
+    <p>
+      フリマアプリやネットショップで商品を発送する場合、
+      60サイズは最もよく使われる配送サイズのひとつです。
+      宅配会社によって料金が異なるため、
+      事前に送料を比較して確認することが大切です。
+    </p>
+  </div>
+
+  <div>
+    <h2 className="text-2xl font-bold mb-3">
+      メルカリ発送で一番安い配送方法は？
+    </h2>
+    <p>
+      メルカリではらくらくメルカリ便、ゆうゆうメルカリ便など複数の配送方法があります。
+      サイズや重量によって最安値が変わるため、
+      利益を残すためには送料計算が重要になります。
+    </p>
+  </div>
+
+  <div>
+    <h2 className="text-2xl font-bold mb-3">
+      送料を間違えると利益がなくなることもある
+    </h2>
+    <p>
+      商品価格だけを見て利益計算すると、
+      実際には送料負担で赤字になるケースがあります。
+      フリマ販売や物販では発送前に送料を確認する習慣が重要です。
+    </p>
+  </div>
+
+  <div>
+    <h2 className="text-2xl font-bold mb-3">
+      よくある質問
+    </h2>
+    <p>
+      Q. 宅急便60サイズの料金比較はできますか？<br />
+      A. はい。配送会社ごとの料金比較に使えます。<br /><br />
+
+      Q. メルカリ発送にも使えますか？<br />
+      A. はい。フリマアプリの送料確認にも便利です。
+    </p>
+  </div>
+
+</section>
       <section className="mt-10 bg-white rounded-xl p-6">
   <h2 className="text-xl font-bold mb-4">
     フリマ販売で送料計算が重要な理由
